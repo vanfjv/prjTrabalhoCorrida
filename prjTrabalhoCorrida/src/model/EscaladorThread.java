@@ -25,11 +25,11 @@ public class EscaladorThread extends JLabel implements Runnable {
 
    
     public void run() {
-        posX += new Random().nextInt(3) * 10;
+        posY -= new Random().nextInt(3) * 10;
         this.setLocation(posX, posY);
         //imagem.getIconHeight();
 
-        if (posX >= 1280)
+        if (posY >= 720)
             return;
 
         try {
